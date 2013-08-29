@@ -63,7 +63,7 @@ You can start using MemJS immediately from the node console:
 
     $ var memjs = require('memjs')
     $ var client = memjs.Client.create()
-    $ client.get('hello', console.log)
+    $ client.get('hello', function(err, data) { client.close(); })
 
 ## Contributing
 
